@@ -194,7 +194,7 @@ module.exports = {
          * 添加CDN参数到 htmlWebpackPlugin 配置中
          */
         config.plugin('html').tap(args => {
-            args[0].template = 'src/index.html';
+            args[0].template = 'public/index.html';
             if (process.env.NODE_ENV === 'production') {
                 args[0].cdn = cdn.build;
             }
