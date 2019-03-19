@@ -1,0 +1,46 @@
+.font-dpr(@px) {
+  font-size: round(@px / 2) * 1px;
+  [data-dpr="2"] & {
+    font-size: @px * 1px;
+  }
+  // for mx3s
+  [data-dpr="2.5"] & {
+    font-size: round(@px * 2.5 / 2) * 1px;
+  }
+  // for 小米note
+  [data-dpr="2.75"] & {
+    font-size: round(@px * 2.75 / 2) * 1px;
+  }
+  [data-dpr="3"] & {
+    font-size: round(@px / 2 * 3) * 1px;
+  }
+  // for 三星note4
+  [data-dpr="4"] & {
+    font-size: @px * 2px;
+  }
+}
+
+.px-dpr(@name, @px) {
+    @{name}: round(@px * 1) * 1px;
+
+  [data-dpr="2"] & {
+      @{name}: round(@px * 2) * 1px;
+  }
+  // for mx3s
+  [data-dpr="2.5"] & {
+      @{name}: round(@px * 2.5) * 1px;
+  }
+  // for 小米note
+  [data-dpr="2.75"] & {
+      @{name}: round(@px * 2.75) * 1px;
+  }
+  [data-dpr="3"] & {
+      @{name}: round(@px * 3) * 1px;
+  }
+  // for 三星note4
+  [data-dpr="4"] & {
+      @{name}: round(@px * 4) * 1px;
+  }
+}
+
+

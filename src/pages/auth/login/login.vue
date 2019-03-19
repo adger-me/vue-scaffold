@@ -1,6 +1,6 @@
 <template>
-    <div id="app">
-        <router-view></router-view>
+    <div>
+        登录
     </div>
 </template>
 
@@ -9,6 +9,9 @@
         data() {
             return {}
         },
+        components: {},
+        methods: {},
+        computed: {},
         mounted() {
         }
     }
