@@ -9,7 +9,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "./hooks/pre_commit_hooks.js"
+      "pre-commit": "node ./hooks/pre_commit_hooks.js"
     }
   },
   "dependencies": {
@@ -42,7 +42,8 @@
     "uglifyjs-webpack-plugin": "^2.1.2",
     "vue-cli-plugin-prerender-spa": "^1.1.5",
     "vue-svg-loader": "^0.12.0",
-    "vue-template-compiler": "^2.5.21"
+    "vue-template-compiler": "^2.5.21",
+    "webpack-bundle-analyzer": "^3.3.2"
   },
   "eslintConfig": {
     "root": true,
