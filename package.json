@@ -7,9 +7,15 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "./hooks/pre_commit_hooks.js"
+    }
+  },
   "dependencies": {
     "dayjs": "^1.8.10",
     "flyio": "^0.6.14",
+    "husky": "^2.3.0",
     "md5": "^2.2.1",
     "mobile-message": "^0.0.3",
     "vue": "^2.6.6",
